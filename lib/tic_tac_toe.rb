@@ -117,3 +117,5 @@ def play
     puts "Draw."
   end
 end
+
+play
