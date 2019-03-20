@@ -106,3 +106,14 @@ def winner(board)
   end
 end
 
+def play
+  until over?(board) do
+    turn(board)
+  end
+  
+  if won?(board)
+    puts "Congratulations! #{winner(board)} wins!"
+  elsif draw?(board)
+    puts "Draw."
+  end
+end
